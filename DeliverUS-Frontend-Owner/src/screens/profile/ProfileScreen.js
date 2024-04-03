@@ -85,10 +85,10 @@ export default function ProfileScreen() {
       style: GlobalStyles.flashStyle,
       titleStyle: GlobalStyles.flashTextStyle
     }),
-      (error) => {
-        console.error(error.errors)
-        setBackendErrors(error.errors)
-      })
+    (error) => {
+      console.error(error.errors)
+      setBackendErrors(error.errors)
+    })
   }
   return (
     <Formik
