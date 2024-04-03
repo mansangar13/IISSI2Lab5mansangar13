@@ -58,6 +58,13 @@ export default function RestaurantsScreen ({ navigation }) {
       data={restaurants}
       renderItem={renderRestaurant}
       keyExtractor={item => item.id.toString()}
+      ListEmptyComponent={ () => (
+        <View style={{ alignItems: 'center', margin: 20 }}>
+          <TextRegular style={styles.GlobalStyles}>
+            No hay restaurantes para cargar
+          </TextRegular>
+        </View>
+      )}
     />
   )
 }
