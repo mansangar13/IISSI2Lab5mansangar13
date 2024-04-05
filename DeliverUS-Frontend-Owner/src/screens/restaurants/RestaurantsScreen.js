@@ -60,9 +60,9 @@ export default function RestaurantsScreen ({ navigation }) {
       keyExtractor={item => item.id.toString()}
       ListEmptyComponent={ () => (
         <View style={{ alignItems: 'center', margin: 20 }}>
-          <TextRegular style={styles.GlobalStyles}>
-            No hay restaurantes para cargar
-          </TextRegular>
+          <p style={{ fontFamily: 'sans-serif', fontSize: 20 }}>
+           <em> No hay restaurantes para cargar </em>
+          </p>
         </View>
       )}
     />
